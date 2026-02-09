@@ -1,0 +1,1124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeadBricks Studios - Drive Real Growth & Leads</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0F3D2E',
+secondary: '#0B2A20',
+accent: '#C6A86B',
+ivory: '#F6F5F0'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+},
+fontFamily: {
+'pacifico': ['Pacifico', 'serif'],
+'inter': ['Inter', 'sans-serif']
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Inter', sans-serif;
+}
+.marquee-container {
+overflow: hidden;
+white-space: nowrap;
+position: relative;
+}
+.marquee-text {
+display: inline-block;
+animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+.hero-bg {
+background: linear-gradient(135deg, #0F3D2E 0%, #0B2A20 50%, #0F3D2E 100%);
+}
+.cta-bg {
+background: linear-gradient(135deg, #0F3D2E 0%, #0B2A20 100%);
+}
+.floating-animation {
+animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-20px); }
+}
+.popup-overlay {
+background: rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(4px);
+}
+.fade-in {
+animation: fadeIn 0.5s ease-out;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: scale(0.9); }
+to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Fixed Top Section -->
+<div class="fixed top-0 left-0 right-0 z-50">
+<!-- Marquee Bar -->
+<div class="bg-primary text-white py-2 px-4">
+<div class="flex items-center justify-between max-w-7xl mx-auto">
+<div class="marquee-container flex-1">
+<div class="marquee-text text-sm font-medium">
+Limited Offer: Get real growth in 45 days with our performance marketing packages
+</div>
+</div>
+<a href="https://wa.me/919958044308?text=Hello%20LeadBricks%20Studios,%20I'm%20interested%20in%20your%20growth%20packages.%20Please%20share%20more%20details."
+class="bg-accent text-primary px-4 py-1 !rounded-button text-sm font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap ml-4">
+Book a Strategy Call
+</a>
+</div>
+</div>
+<!-- Main Header -->
+<header class="bg-white shadow-sm border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-4 py-4">
+<div class="flex items-center justify-between">
+<div class="text-2xl font-bold text-primary">LeadBricks Studios</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+<a href="#packages" class="text-gray-700 hover:text-primary transition-colors">Packages</a>
+<a href="#process" class="text-gray-700 hover:text-primary transition-colors">Process</a>
+<a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Testimonials</a>
+</nav>
+<a href="https://wa.me/919958044308?text=Hello%20LeadBricks%20Studios,%20I'm%20interested%20in%20your%20growth%20packages.%20Please%20share%20more%20details."
+class="bg-accent text-primary px-6 py-2 !rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap">
+Get Started
+</a>
+</div>
+</div>
+</header>
+</div>
+<!-- Timed Popup -->
+<div id="popup" class="fixed inset-0 z-[100] popup-overlay hidden items-center justify-center">
+<div class="bg-white rounded-2xl p-8 max-w-2xl w-[80%] max-h-[80%] relative fade-in">
+<button id="closePopup" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-gray-500 hover:text-gray-700">
+<i class="ri-close-line text-xl"></i>
+</button>
+<div class="text-center">
+<h2 class="text-3xl font-bold text-primary mb-4">Rethink Your Online Presence in 45 Days</h2>
+<p class="text-gray-600 mb-6 text-lg">A limited-slot growth program for businesses that want real engagement, real leads, and real results.</p>
+<a href="https://wa.me/919958044308?text=Hello%20LeadBricks%20Studios,%20I'm%20interested%20in%20your%20growth%20packages.%20Please%20share%20more%20details."
+class="bg-accent text-primary px-8 py-3 !rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap inline-block mb-4">
+Request a Free Strategy Call
+</a>
+<p class="text-sm text-gray-500">Only limited onboarding slots available this month.</p>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="hero-bg pt-32 pb-16 min-h-screen flex items-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-20 left-10 w-32 h-32 bg-accent rounded-full blur-xl"></div>
+<div class="absolute bottom-20 right-10 w-48 h-48 bg-white rounded-full blur-2xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 w-full">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-white">
+<h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+Drive Real Growth, Leads & Visibility with
+<span class="text-accent">LeadBricks Studios</span>
+</h1>
+<p class="text-xl mb-6 text-gray-200 leading-relaxed">
+7 years of proven expertise helping businesses grow online with performance marketing, real engagement strategies, and high-converting content systems.
+</p>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8 text-center">
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+<div class="text-2xl font-bold text-accent">10K+</div>
+<div class="text-sm text-gray-300">Campaigns</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+<div class="text-2xl font-bold text-accent">₹11Cr</div>
+<div class="text-sm text-gray-300">Ad Spend</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+<div class="text-2xl font-bold text-accent">38</div>
+<div class="text-sm text-gray-300">Team Members</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+<div class="text-2xl font-bold text-accent">8</div>
+<div class="text-sm text-gray-300">Brand Partners</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+
+
+</div>
+</div>
+<div class="relative h-96 lg:h-[500px]">
+<!-- Background laptop image with overlay -->
+<div class="absolute inset-0 rounded-3xl overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=modern%20business%20professional%20working%20on%20laptop%20with%20digital%20marketing%20analytics%20dashboard%2C%20clean%20minimal%20office%20setup%2C%20professional%20lighting%2C%20high-tech%20atmosphere%2C%20emerald%20green%20and%20gold%20accents%2C%20premium%20business%20environment%2C%20soft%20background%20blur%20effect&width=600&height=500&seq=hero1&orientation=landscape"
+alt="Business Growth Background" class="w-full h-full object-cover object-center opacity-20">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/5"></div>
+</div>
+<!-- Floating stats and graphics -->
+<div class="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl floating-animation z-20 border border-accent/20">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+<i class="ri-trophy-line text-white text-sm"></i>
+</div>
+<div class="text-primary font-bold text-lg">45-Day</div>
+</div>
+<div class="text-gray-600 text-sm">Growth Strategy</div>
+<div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+<div class="bg-gradient-to-r from-primary to-accent h-2 rounded-full w-4/5"></div>
+</div>
+</div>
+<div class="absolute top-1/2 left-8 bg-gradient-to-br from-accent to-accent/80 text-primary rounded-2xl p-6 shadow-xl floating-animation z-20 transform -translate-y-1/2" style="animation-delay: 2s;">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+<i class="ri-heart-pulse-line text-primary text-sm"></i>
+</div>
+<div class="font-bold text-lg">Real Engagement</div>
+</div>
+<div class="text-primary/80 text-sm">Framework</div>
+<div class="flex items-center gap-1 mt-3">
+<div class="w-2 h-2 bg-primary rounded-full"></div>
+<div class="w-2 h-2 bg-primary/60 rounded-full"></div>
+<div class="w-2 h-2 bg-primary/30 rounded-full"></div>
+</div>
+</div>
+<div class="absolute bottom-8 right-1/4 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl floating-animation z-20 border border-primary/10" style="animation-delay: 4s;">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
+<i class="ri-bar-chart-line text-white text-sm"></i>
+</div>
+<div class="text-primary font-bold text-lg">10,000+</div>
+</div>
+<div class="text-gray-600 text-sm">Campaigns Created</div>
+<div class="flex gap-1 mt-3">
+<div class="w-3 h-8 bg-gradient-to-t from-primary to-primary/50 rounded"></div>
+<div class="w-3 h-6 bg-gradient-to-t from-accent to-accent/50 rounded"></div>
+<div class="w-3 h-10 bg-gradient-to-t from-primary to-primary/50 rounded"></div>
+<div class="w-3 h-4 bg-gradient-to-t from-accent to-accent/50 rounded"></div>
+</div>
+</div>
+<!-- Central graphical element -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+<div class="relative w-32 h-32">
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full opacity-20 animate-pulse"></div>
+<div class="absolute inset-2 bg-gradient-to-r from-accent to-primary rounded-full opacity-30 animate-pulse" style="animation-delay: 1s;"></div>
+<div class="absolute inset-4 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg">
+<i class="ri-rocket-line text-3xl text-primary"></i>
+</div>
+</div>
+</div>
+<!-- Decorative elements -->
+<div class="absolute top-16 left-16 w-4 h-4 bg-accent rounded-full opacity-60 floating-animation" style="animation-delay: 1s;"></div>
+<div class="absolute bottom-16 left-20 w-6 h-6 bg-primary rounded-full opacity-40 floating-animation" style="animation-delay: 3s;"></div>
+<div class="absolute top-20 right-32 w-3 h-3 bg-accent rounded-full opacity-80 floating-animation" style="animation-delay: 5s;"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gradient-to-br from-ivory to-white relative overflow-hidden">
+<!-- Background graphics -->
+<div class="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-accent/5 rounded-full -translate-x-32 -translate-y-32"></div>
+<div class="absolute bottom-0 right-0 w-48 h-48 bg-gradient-to-tl from-accent/10 to-primary/5 rounded-full translate-x-24 translate-y-24"></div>
+<div class="max-w-7xl mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<div class="inline-block mb-4">
+<div class="w-16 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-4"></div>
+</div>
+<h2 class="text-4xl font-bold text-primary mb-4">Our Core Services</h2>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto mb-6">7 years of expertise delivering comprehensive digital marketing solutions with over 10,000 campaigns created and ₹11 crore in ad spend experience</p>
+<div class="flex flex-wrap justify-center gap-8 text-sm text-gray-600">
+<div class="flex items-center gap-2">
+<i class="ri-trophy-line text-primary"></i>
+<span>7 Years Experience</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-rocket-line text-primary"></i>
+<span>10,000+ Campaigns</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-money-rupee-circle-line text-primary"></i>
+<span>₹11 Crore Ad Spend</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-team-line text-primary"></i>
+<span>Team of 38 Experts</span>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105 border border-gray-100 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-accent/5 rounded-full translate-x-12 -translate-y-12"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary to-secondary rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+<i class="ri-rocket-line text-2xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Performance Marketing</h3>
+<p class="text-gray-600 mb-4">Data-driven campaigns that deliver measurable ROI through strategic ad placement and optimization. Over ₹11 crore in successful ad spend management.</p>
+<div class="bg-primary/5 rounded-lg p-3 mb-4">
+<div class="text-sm text-primary font-semibold">7,500+ Campaigns Delivered</div>
+<div class="text-xs text-gray-600">Average ROI: 300%+</div>
+</div>
+<div class="flex items-center gap-2 mt-6">
+<div class="w-2 h-2 bg-primary rounded-full"></div>
+<div class="w-2 h-2 bg-accent rounded-full"></div>
+<div class="w-2 h-2 bg-primary/50 rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105 border border-gray-100 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-accent/10 to-primary/5 rounded-full translate-x-12 -translate-y-12"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-accent to-accent/80 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+<i class="ri-heart-line text-2xl text-primary"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">Content & Social Growth</h3>
+<p class="text-gray-600 mb-4">Engaging content strategies that build authentic communities and drive organic growth. Trusted by 8 major brand partners.</p>
+<div class="bg-accent/10 rounded-lg p-3 mb-4">
+<div class="text-sm text-primary font-semibold">2,000+ Content Pieces Created</div>
+<div class="text-xs text-gray-600">Avg Engagement: 400%+ increase</div>
+</div>
+<div class="flex items-center gap-2 mt-6">
+<div class="w-2 h-2 bg-accent rounded-full"></div>
+<div class="w-2 h-2 bg-primary rounded-full"></div>
+<div class="w-2 h-2 bg-accent/50 rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105 border border-gray-100 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-accent/5 rounded-full translate-x-12 -translate-y-12"></div>
+<div class="relative z-10">
+<div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary to-secondary rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+<i class="ri-computer-line text-2xl text-white"></i>
+</div>
+<h3 class="text-xl font-bold text-primary mb-4">High-Converting Websites</h3>
+<p class="text-gray-600 mb-4">Custom-built websites optimized for conversions and designed to turn visitors into customers. Built by our team of 38 specialists.</p>
+<div class="bg-primary/5 rounded-lg p-3 mb-4">
+<div class="text-sm text-primary font-semibold">500+ Websites Developed</div>
+<div class="text-xs text-gray-600">Avg Conversion Rate: 250%+ improvement</div>
+</div>
+<div class="flex items-center gap-2 mt-6">
+<div class="w-2 h-2 bg-primary rounded-full"></div>
+<div class="w-2 h-2 bg-accent rounded-full"></div>
+<div class="w-2 h-2 bg-primary/50 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Packages Section -->
+<section id="packages" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Choose Your Growth Package</h2>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">Tailored solutions for businesses ready to scale their online presence</p>
+</div>
+<div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+<!-- Growth Package -->
+<div class="relative bg-white rounded-2xl p-8 shadow-xl border-2 border-accent">
+<div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-primary px-6 py-2 rounded-full text-sm font-bold">
+Most Popular
+</div>
+<div class="text-center mb-8">
+<h3 class="text-2xl font-bold text-primary mb-2">Growth Package</h3>
+<div class="text-4xl font-bold text-primary mb-4">₹29,999</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Content calendar with strategic planning</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Influencer marketing funnel setup</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Guaranteed online presence boost</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Real growth strategy (45 days)</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Real engagement framework</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">5 UGC videos production</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">15 posts per month</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Meta ads campaign setup & management</span>
+</li>
+</ul>
+<a href="https://wa.me/919958044308?text=Hello%20LeadBricks%20Studios,%20I'm%20interested%20in%20your%20growth%20packages.%20Please%20share%20more%20details."
+class="w-full bg-accent text-primary py-4 !rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap text-center block">
+Get Started
+</a>
+</div>
+<!-- Website Package -->
+<div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
+<div class="text-center mb-8">
+<h3 class="text-2xl font-bold text-primary mb-2">Website Package</h3>
+<div class="text-4xl font-bold text-primary mb-4">₹14,999</div>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Full informative business website</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Mobile-responsive design</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Contact form integration</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">SEO-friendly structure</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center bg-primary rounded-full mt-0.5">
+<i class="ri-check-line text-xs text-white"></i>
+</div>
+<span class="text-gray-700">Fast loading pages</span>
+</li>
+</ul>
+<a href="https://wa.me/919958044308?text=Hello%20LeadBricks%20Studios,%20I'm%20interested%20in%20your%20growth%20packages.%20Please%20share%20more%20details."
+class="w-full bg-primary text-white py-4 !rounded-button font-semibold hover:bg-opacity-90 transition-all whitespace-nowrap text-center block">
+Launch My Website
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Section -->
+<section class="py-20 bg-gradient-to-br from-ivory via-white to-ivory relative overflow-hidden">
+<!-- Background graphics -->
+<div class="absolute inset-0 opacity-30">
+<div class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/20 to-accent/10 rounded-full blur-2xl"></div>
+<div class="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-tl from-accent/20 to-primary/10 rounded-full blur-2xl"></div>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-primary/5 to-accent/5 rounded-full blur-3xl"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<div class="inline-flex items-center gap-4 mb-6">
+<div class="w-12 h-1 bg-gradient-to-r from-primary to-accent"></div>
+<div class="w-3 h-3 bg-primary rounded-full"></div>
+<div class="w-12 h-1 bg-gradient-to-r from-accent to-primary"></div>
+</div>
+<h2 class="text-4xl font-bold text-primary mb-4">Why Choose LeadBricks Studios</h2>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto mb-6">7 years of proven expertise with 10,000+ campaigns, ₹11 crore in ad spend, and a dedicated team of 38 professionals delivering results across India's major commercial hubs</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">7+</div>
+<div class="text-sm text-gray-600">Years Experience</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-accent">10K+</div>
+<div class="text-sm text-gray-600">Campaigns Created</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary">₹11Cr+</div>
+<div class="text-sm text-gray-600">Ad Spend Managed</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-accent">11+</div>
+<div class="text-sm text-gray-600">Cities Covered</div>
+</div>
+</div>
+<div class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 max-w-5xl mx-auto">
+<h3 class="text-xl font-bold text-primary text-center mb-4">Serving India's Major Commercial Hubs</h3>
+<p class="text-gray-600 text-center mb-4">Pan-India presence with localized strategies and measurable results across diverse markets</p>
+<div class="flex flex-wrap justify-center gap-3 text-sm">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">Hyderabad</span>
+<span class="bg-accent/10 text-primary px-3 py-1 rounded-full">Delhi</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">Gurugram</span>
+<span class="bg-accent/10 text-primary px-3 py-1 rounded-full">Noida</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">Faridabad</span>
+<span class="bg-accent/10 text-primary px-3 py-1 rounded-full">Ghaziabad</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">Bangalore</span>
+<span class="bg-accent/10 text-primary px-3 py-1 rounded-full">Mumbai</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">Gujarat</span>
+<span class="bg-accent/10 text-primary px-3 py-1 rounded-full">Surat</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full">Indore</span>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 hover:border-accent/30">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-heart-pulse-line text-white text-sm"></i>
+</div>
+<div>
+<h3 class="font-semibold text-primary mb-2">7 Years of Proven Results</h3>
+<p class="text-gray-600">Over 10,000 campaigns created with authentic engagement strategies that convert into real business results.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 hover:border-accent/30">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-line-chart-line text-primary text-sm"></i>
+</div>
+<div>
+<h3 class="font-semibold text-primary mb-2">₹11 Crore Ad Spend Expertise</h3>
+<p class="text-gray-600">Every campaign is backed by extensive experience managing large-scale ad spends with measurable ROI.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 hover:border-accent/30">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-roadmap-line text-white text-sm"></i>
+</div>
+<div>
+<h3 class="font-semibold text-primary mb-2">Clear growth roadmap</h3>
+<p class="text-gray-600">Transparent 45-day plans with defined milestones and objectives.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 hover:border-accent/30">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-file-chart-line text-primary text-sm"></i>
+</div>
+<div>
+<h3 class="font-semibold text-primary mb-2">Weekly reporting</h3>
+<p class="text-gray-600">Regular updates on campaign performance and growth metrics.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/10 hover:border-accent/30">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-user-star-line text-white text-sm"></i>
+</div>
+<div>
+<h3 class="font-semibold text-primary mb-2">Pan-India Presence</h3>
+<p class="text-gray-600">Serving 11+ major commercial hubs across India with localized strategies and dedicated account management backed by our team of 38 specialists.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Coverage Section -->
+<section class="py-16 bg-gradient-to-br from-primary/5 via-white to-accent/5">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-12">
+<div class="inline-flex items-center gap-4 mb-6">
+<div class="w-12 h-1 bg-gradient-to-r from-primary to-accent"></div>
+<div class="w-3 h-3 bg-accent rounded-full"></div>
+<div class="w-12 h-1 bg-gradient-to-r from-accent to-primary"></div>
+</div>
+<h2 class="text-3xl font-bold text-primary mb-4">Expanding Across India's Growth Markets</h2>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto">LeadBricks Studios collaborates with businesses across India's major commercial hubs, delivering localized strategies with measurable results across diverse markets</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white rounded-xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 group">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-building-line text-white"></i>
+</div>
+<div>
+<h3 class="font-bold text-primary">NCR Region</h3>
+<div class="text-sm text-gray-600">4 Major Cities</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Delhi</span>
+<span class="bg-accent/10 text-primary text-xs px-2 py-1 rounded-full">Gurugram</span>
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Noida</span>
+<span class="bg-accent/10 text-primary text-xs px-2 py-1 rounded-full">Faridabad</span>
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Ghaziabad</span>
+</div>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 group">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-rocket-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-bold text-primary">Tech Hubs</h3>
+<div class="text-sm text-gray-600">IT & Startup Centers</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-accent/10 text-primary text-xs px-2 py-1 rounded-full">Hyderabad</span>
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Bangalore</span>
+</div>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 group">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-bank-line text-white"></i>
+</div>
+<div>
+<h3 class="font-bold text-primary">Financial Hub</h3>
+<div class="text-sm text-gray-600">Commercial Capital</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Mumbai</span>
+</div>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 group">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-store-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-bold text-primary">Western Markets</h3>
+<div class="text-sm text-gray-600">Trade & Commerce</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-accent/10 text-primary text-xs px-2 py-1 rounded-full">Gujarat</span>
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Surat</span>
+</div>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-lg border border-primary/10 hover:shadow-xl transition-all duration-300 group">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<i class="ri-map-pin-line text-white"></i>
+</div>
+<div>
+<h3 class="font-bold text-primary">Central India</h3>
+<div class="text-sm text-gray-600">Emerging Markets</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Indore</span>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 max-w-4xl mx-auto">
+<h3 class="text-xl font-bold text-primary mb-3">Localized Growth Strategies for Every Market</h3>
+<p class="text-gray-600 mb-4">Our team of 38 specialists understands the unique dynamics of each commercial hub, creating targeted campaigns that resonate with local audiences while maintaining brand consistency across all markets.</p>
+<div class="flex flex-wrap justify-center gap-6 text-sm text-primary">
+<div class="flex items-center gap-2">
+<i class="ri-focus-line"></i>
+<span>Market-Specific Strategies</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-global-line"></i>
+<span>Pan-India Reach</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-bar-chart-box-line"></i>
+<span>Measurable Local Impact</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section id="process" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Our Proven Process</h2>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto mb-6">A systematic approach refined over 7 years, delivering consistent growth results across 10,000+ campaigns and ₹11 crore in ad spend</p>
+<div class="flex justify-center items-center gap-8 text-sm text-primary">
+<div class="flex items-center gap-2">
+<i class="ri-calendar-line"></i>
+<span>7 Years Proven</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-shield-check-line"></i>
+<span>10K+ Success Stories</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-team-line"></i>
+<span>8 Brand Partners</span>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">1</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Strategy Call</h3>
+<p class="text-gray-600 mb-2">Understanding your business goals and current challenges</p>
+<div class="text-xs text-primary font-semibold bg-primary/10 rounded-full px-3 py-1 inline-block">7+ Years Consultation Experience</div>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">2</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Setup & Research</h3>
+<p class="text-gray-600 mb-2">Market analysis and campaign architecture development</p>
+<div class="text-xs text-accent font-semibold bg-accent/10 rounded-full px-3 py-1 inline-block">Team of 38 Specialists</div>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">3</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Campaign Launch</h3>
+<p class="text-gray-600 mb-2">Executing multi-channel marketing strategies</p>
+<div class="text-xs text-primary font-semibold bg-primary/10 rounded-full px-3 py-1 inline-block">₹11Cr+ Ad Spend Experience</div>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">4</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Growth & Optimization</h3>
+<p class="text-gray-600 mb-2">Continuous improvement and scaling successful campaigns</p>
+<div class="text-xs text-accent font-semibold bg-accent/10 rounded-full px-3 py-1 inline-block">10,000+ Campaigns Optimized</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-ivory">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-primary mb-4">Client Success Stories</h2>
+<p class="text-gray-600 text-lg max-w-2xl mx-auto">Real results from businesses that trusted us with their growth</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20business%20woman%20CEO%20headshot%2C%20confident%20smile%2C%20modern%20office%20background%2C%20high-quality%20portrait%20photography%2C%20business%20attire&width=80&height=80&seq=testimonial1&orientation=squarish"
+alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover object-top">
+<div>
+<h4 class="font-semibold text-primary">Sarah Johnson</h4>
+<p class="text-sm text-gray-600">TechFlow Solutions</p>
+</div>
+</div>
+<p class="text-gray-700">"LeadBricks transformed our online presence completely. We saw a 300% increase in qualified leads within the first 45 days."</p>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20business%20man%20entrepreneur%20headshot%2C%20confident%20expression%2C%20modern%20corporate%20setting%2C%20executive%20portrait%20photography%2C%20business%20suit&width=80&height=80&seq=testimonial2&orientation=squarish"
+alt="Michael Chen" class="w-12 h-12 rounded-full object-cover object-top">
+<div>
+<h4 class="font-semibold text-primary">Michael Chen</h4>
+<p class="text-sm text-gray-600">GreenLife Wellness</p>
+</div>
+</div>
+<p class="text-gray-700">"The ROI on our marketing spend improved by 250%. Their performance marketing strategies are incredibly effective."</p>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-lg">
+<div class="flex items-center gap-4 mb-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20business%20woman%20marketing%20director%20headshot%2C%20warm%20smile%2C%20contemporary%20office%20environment%2C%20executive%20portrait%20photography%2C%20professional%20attire&width=80&height=80&seq=testimonial3&orientation=squarish"
+alt="Emily Rodriguez" class="w-12 h-12 rounded-full object-cover object-top">
+<div>
+<h4 class="font-semibold text-primary">Emily Rodriguez</h4>
+<p class="text-sm text-gray-600">Urban Retail Co.</p>
+</div>
+</div>
+<p class="text-gray-700">"Their content strategy helped us build a community of 50,000 engaged followers and doubled our online sales."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQs Section -->
+<section class="py-20 bg-white relative overflow-hidden">
+<!-- Background graphics -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-primary/5 to-accent/5 rounded-full translate-x-32 -translate-y-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-accent/10 to-primary/5 rounded-full -translate-x-24 translate-y-24"></div>
+<div class="max-w-4xl mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<div class="inline-flex items-center gap-4 mb-6">
+<div class="w-12 h-1 bg-gradient-to-r from-primary to-accent"></div>
+<div class="w-3 h-3 bg-accent rounded-full"></div>
+<div class="w-12 h-1 bg-gradient-to-r from-accent to-primary"></div>
+</div>
+<h2 class="text-4xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+<p class="text-gray-600 text-lg max-w-3xl mx-auto">Get answers to common questions about our 7-year proven process, team expertise, and growth strategies</p>
+</div>
+<div class="space-y-6">
+<div class="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+<button class="faq-toggle w-full text-left p-6 flex items-center justify-between" data-target="faq1">
+<h3 class="text-lg font-semibold text-primary pr-4">How do you guarantee results in 45 days with your 7-year experience?</h3>
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<i class="ri-add-line text-primary group-hover:text-white transition-colors faq-icon"></i>
+</div>
+</button>
+<div id="faq1" class="faq-content hidden px-6 pb-6">
+<div class="bg-primary/5 rounded-lg p-4 mb-4">
+<div class="flex items-center gap-3 mb-2">
+<i class="ri-award-line text-primary"></i>
+<span class="text-sm font-semibold text-primary">7 Years + 10,000+ Campaigns + ₹11 Crore Experience</span>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed">Our 45-day guarantee is backed by 7 years of proven methodology and over 10,000 successful campaigns. We use data-driven strategies refined through ₹11 crore in ad spend management. Our team of 38 specialists follows a systematic approach that has consistently delivered measurable growth for businesses across various industries. Every strategy is customized based on extensive market research and competitor analysis.</p>
+</div>
+</div>
+<div class="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+<button class="faq-toggle w-full text-left p-6 flex items-center justify-between" data-target="faq2">
+<h3 class="text-lg font-semibold text-primary pr-4">What makes your team of 38 specialists different from other agencies?</h3>
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<i class="ri-add-line text-primary group-hover:text-white transition-colors faq-icon"></i>
+</div>
+</button>
+<div id="faq2" class="faq-content hidden px-6 pb-6">
+<div class="bg-accent/10 rounded-lg p-4 mb-4">
+<div class="flex items-center gap-3 mb-2">
+<i class="ri-team-line text-primary"></i>
+<span class="text-sm font-semibold text-primary">38 Specialists + 8 Brand Partners</span>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed">Our team includes specialists in performance marketing, content strategy, UGC production, web development, and analytics. Each team member has extensive experience in their domain, collectively managing campaigns worth ₹11 crore. We're trusted by 8 major brand partners, which speaks to our expertise and reliability. Unlike smaller agencies, we have dedicated specialists for each aspect of your growth strategy, ensuring expert-level execution at every stage.</p>
+</div>
+</div>
+<div class="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+<button class="faq-toggle w-full text-left p-6 flex items-center justify-between" data-target="faq3">
+<h3 class="text-lg font-semibold text-primary pr-4">How do you manage ₹11 crore in ad spend experience across 10,000+ campaigns?</h3>
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<i class="ri-add-line text-primary group-hover:text-white transition-colors faq-icon"></i>
+</div>
+</button>
+<div id="faq3" class="faq-content hidden px-6 pb-6">
+<div class="bg-primary/5 rounded-lg p-4 mb-4">
+<div class="flex items-center gap-3 mb-2">
+<i class="ri-money-rupee-circle-line text-primary"></i>
+<span class="text-sm font-semibold text-primary">₹11 Crore Ad Spend + 10,000+ Campaigns</span>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed">Our extensive ad spend management comes from 7 years of handling campaigns across multiple platforms and industries. We use advanced analytics tools, A/B testing frameworks, and performance tracking systems to optimize every rupee spent. Our team has developed proprietary methodologies for budget allocation, audience targeting, and campaign scaling that have been refined through thousands of successful campaigns.</p>
+</div>
+</div>
+<div class="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+<button class="faq-toggle w-full text-left p-6 flex items-center justify-between" data-target="faq4">
+<h3 class="text-lg font-semibold text-primary pr-4">What's included in your Growth Package for ₹29,999?</h3>
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<i class="ri-add-line text-primary group-hover:text-white transition-colors faq-icon"></i>
+</div>
+</button>
+<div id="faq4" class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600 leading-relaxed mb-4">Our Growth Package includes:</p>
+<div class="grid md:grid-cols-2 gap-4 mb-4">
+<div class="bg-primary/5 rounded-lg p-4">
+<h4 class="font-semibold text-primary mb-2">Strategy & Planning</h4>
+<ul class="text-sm text-gray-600 space-y-1">
+<li>• Content calendar with strategic planning</li>
+<li>• Real growth strategy (45 days)</li>
+<li>• Real engagement framework</li>
+</ul>
+</div>
+<div class="bg-accent/10 rounded-lg p-4">
+<h4 class="font-semibold text-primary mb-2">Content & Marketing</h4>
+<ul class="text-sm text-gray-600 space-y-1">
+<li>• 5 UGC videos production</li>
+<li>• 15 posts per month</li>
+<li>• Influencer marketing funnel setup</li>
+<li>• Meta ads campaign setup & management</li>
+</ul>
+</div>
+</div>
+<p class="text-gray-600">Plus guaranteed online presence boost backed by our 7-year expertise and team of 38 specialists.</p>
+</div>
+</div>
+<div class="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+<button class="faq-toggle w-full text-left p-6 flex items-center justify-between" data-target="faq5">
+<h3 class="text-lg font-semibold text-primary pr-4">Which cities and regions do you serve across India?</h3>
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<i class="ri-add-line text-primary group-hover:text-white transition-colors faq-icon"></i>
+</div>
+</button>
+<div id="faq5" class="faq-content hidden px-6 pb-6">
+<div class="bg-accent/10 rounded-lg p-4 mb-4">
+<div class="flex items-center gap-3 mb-2">
+<i class="ri-map-pin-range-line text-primary"></i>
+<span class="text-sm font-semibold text-primary">11+ Major Commercial Hubs Covered</span>
+</div>
+</div>
+<p class="text-gray-600 leading-relaxed mb-4">LeadBricks Studios collaborates with businesses across India's major commercial hubs, delivering localized strategies with measurable results. Our partner network spans:</p>
+<div class="grid md:grid-cols-2 gap-4 mb-4">
+<div class="bg-primary/5 rounded-lg p-3">
+<h4 class="font-semibold text-primary text-sm mb-2">NCR & North India</h4>
+<p class="text-xs text-gray-600">Delhi, Gurugram, Noida, Faridabad, Ghaziabad</p>
+</div>
+<div class="bg-accent/10 rounded-lg p-3">
+<h4 class="font-semibold text-primary text-sm mb-2">South & West India</h4>
+<p class="text-xs text-gray-600">Hyderabad, Bangalore, Mumbai, Gujarat, Surat</p>
+</div>
+</div>
+<div class="bg-primary/5 rounded-lg p-3 mb-4">
+<h4 class="font-semibold text-primary text-sm mb-2">Central India</h4>
+<p class="text-xs text-gray-600">Indore and expanding to more emerging markets</p>
+</div>
+<p class="text-gray-600 leading-relaxed">Our team of 38 specialists understands the unique market dynamics of each region, helping brands grow their presence, engagement, and revenue across diverse markets with targeted local strategies.</p>
+</div>
+</div>
+<div class="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300">
+<button class="faq-toggle w-full text-left p-6 flex items-center justify-between" data-target="faq6">
+<h3 class="text-lg font-semibold text-primary pr-4">How do you measure success and provide reporting?</h3>
+<div class="w-8 h-8 flex items-center justify-center bg-primary/10 rounded-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<i class="ri-add-line text-primary group-hover:text-white transition-colors faq-icon"></i>
+</div>
+</button>
+<div id="faq6" class="faq-content hidden px-6 pb-6">
+<p class="text-gray-600 leading-relaxed mb-4">We provide comprehensive weekly reports that include:</p>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-primary/5 rounded-lg p-4">
+<h4 class="font-semibold text-primary mb-2">Performance Metrics</h4>
+<ul class="text-sm text-gray-600 space-y-1">
+<li>• Campaign performance data</li>
+<li>• ROI and conversion tracking</li>
+<li>• Engagement analytics</li>
+<li>• Lead generation reports</li>
+</ul>
+</div>
+<div class="bg-accent/10 rounded-lg p-4">
+<h4 class="font-semibold text-primary mb-2">Strategic Insights</h4>
+<ul class="text-sm text-gray-600 space-y-1">
+<li>• Optimization recommendations</li>
+<li>• Market trend analysis</li>
+<li>• Competitor insights</li>
+<li>• Next week's action plan</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="cta-bg py-20">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Scale Your Business in 45 Days?</h2>
+<p class="text-xl text-gray-200 mb-6">Join hundreds of businesses that have transformed their online presence with our proven strategies backed by 7 years of expertise.</p>
+<div class="flex flex-wrap justify-center gap-8 mb-8 text-accent">
+<div class="flex items-center gap-2">
+<i class="ri-award-line"></i>
+<span>7 Years Trusted</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-rocket-line"></i>
+<span>10K+ Campaigns</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-team-line"></i>
+<span>38 Expert Team</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-handshake-line"></i>
+<span>8 Brand Partners</span>
+</div>
+</div>
+<a href="https://wa.me/919958044308?text=Hello%20LeadBricks%20Studios,%20I'm%20interested%20in%20your%20growth%20packages.%20Please%20share%20more%20details."
+class="bg-accent text-primary px-12 py-4 !rounded-button font-bold text-lg hover:bg-opacity-90 transition-all whitespace-nowrap inline-block">
+Book a Free Strategy Call
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-secondary text-white py-16">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="text-2xl font-bold text-accent mb-4">LeadBricks Studios</div>
+<p class="text-gray-300 mb-4">Driving real growth through performance marketing and authentic engagement strategies.</p>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#services" class="text-gray-300 hover:text-accent transition-colors">Services</a></li>
+<li><a href="#packages" class="text-gray-300 hover:text-accent transition-colors">Packages</a></li>
+<li><a href="#process" class="text-gray-300 hover:text-accent transition-colors">Process</a></li>
+<li><a href="#testimonials" class="text-gray-300 hover:text-accent transition-colors">Testimonials</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Contact</h4>
+<div class="space-y-2">
+<p class="text-gray-300">leadbricksstudio@outlook.com</p>
+<p class="text-gray-300">+91 99580 44308</p>
+</div>
+</div>
+<div>
+<h4 class="font-semibold mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="https://www.linkedin.com/in/lead-bricks-ba73453a7/" class="w-10 h-10 flex items-center justify-center bg-primary rounded-full hover:bg-accent transition-colors">
+<i class="ri-linkedin-fill text-white"></i>
+</a>
+<a href="https://www.instagram.com/leadbricks_studios/" class="w-10 h-10 flex items-center justify-center bg-primary rounded-full hover:bg-accent transition-colors">
+<i class="ri-instagram-fill text-white"></i>
+</a>
+<a href="https://www.facebook.com/profile.php?id=61586958460786" class="w-10 h-10 flex items-center justify-center bg-primary rounded-full hover:bg-accent transition-colors">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-600 mt-12 pt-8 text-center">
+<p class="text-gray-400">&copy; 2026 LeadBricks Studios. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="popup-timer">
+document.addEventListener('DOMContentLoaded', function() {
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+setTimeout(() => {
+popup.classList.remove('hidden');
+popup.classList.add('flex');
+}, 10000);
+closePopup.addEventListener('click', () => {
+popup.classList.add('hidden');
+popup.classList.remove('flex');
+});
+popup.addEventListener('click', (e) => {
+if (e.target === popup) {
+popup.classList.add('hidden');
+popup.classList.remove('flex');
+}
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+const headerHeight = 120;
+const targetPosition = target.offsetTop - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+function scrollToPackages() {
+const target = document.querySelector('#packages');
+if (target) {
+const headerHeight = 120;
+const targetPosition = target.offsetTop - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+}
+</script>
+<script id="faq-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const faqToggles = document.querySelectorAll('.faq-toggle');
+faqToggles.forEach(toggle => {
+toggle.addEventListener('click', function() {
+const targetId = this.getAttribute('data-target');
+const content = document.getElementById(targetId);
+const icon = this.querySelector('.faq-icon');
+const isOpen = !content.classList.contains('hidden');
+faqToggles.forEach(otherToggle => {
+if (otherToggle !== this) {
+const otherId = otherToggle.getAttribute('data-target');
+const otherContent = document.getElementById(otherId);
+const otherIcon = otherToggle.querySelector('.faq-icon');
+otherContent.classList.add('hidden');
+otherIcon.classList.remove('ri-subtract-line');
+otherIcon.classList.add('ri-add-line');
+}
+});
+if (isOpen) {
+content.classList.add('hidden');
+icon.classList.remove('ri-subtract-line');
+icon.classList.add('ri-add-line');
+} else {
+content.classList.remove('hidden');
+icon.classList.remove('ri-add-line');
+icon.classList.add('ri-subtract-line');
+}
+});
+});
+});
+</script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_V7JMHB0fVJGRu8UHyrsj6pSL1BS76P5zD8qCi7lrTTV', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = '4Vet1IipMdO30yXU9Y3nyA';
+    window.host = 'readdy.ai';
+</script>
+</html>
