@@ -1,0 +1,109 @@
+.faq__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 5vw, 80px);
+  align-items: start;
+}
+.faq__side {
+  position: sticky;
+  top: calc(var(--nav-h) + 32px);
+}
+.faq__side .section-head {
+  margin-bottom: 28px;
+}
+.faq__help {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+  max-width: 440px;
+}
+.faq__help-title {
+  font-size: 1.15rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+.faq__help-text {
+  color: var(--ink-2);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.faq__help-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.faq__list {
+  display: grid;
+  gap: 10px;
+}
+.faq__item {
+  border-radius: var(--r-md);
+  background: linear-gradient(155deg, var(--glass-top), var(--glass-bottom));
+  border: 1px solid var(--glass-edge);
+  box-shadow: 0 0 0 1px var(--line), 0 14px 30px -26px rgba(42, 18, 69, 0.4);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  transition: box-shadow 0.4s var(--ease), background 0.4s var(--ease);
+}
+.faq__item.is-open {
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 0 0 1.5px var(--purple-300), 0 24px 44px -28px rgba(74, 35, 114, 0.5);
+}
+.faq__q {
+  font-size: inherit;
+}
+.faq__q button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  min-height: 64px;
+  padding: 16px 16px 16px 22px;
+  text-align: left;
+  font-size: clamp(0.98rem, 0.92rem + 0.3vw, 1.12rem);
+  font-weight: 750;
+  letter-spacing: -0.015em;
+  border-radius: var(--r-md);
+}
+.faq__icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  border-radius: 50%;
+  color: var(--purple);
+  background: var(--purple-100);
+  transition: transform 0.45s var(--ease), background 0.3s, color 0.3s;
+}
+.faq__icon svg {
+  width: 18px;
+  height: 18px;
+}
+.faq__item.is-open .faq__icon {
+  transform: rotate(135deg);
+  color: var(--ink);
+  background: var(--yellow);
+}
+.faq__a {
+  overflow: hidden;
+}
+.faq__a p {
+  padding: 0 70px 22px 22px;
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .faq__layout {
+    grid-template-columns: 1fr;
+  }
+  .faq__side {
+    position: static;
+  }
+  .faq__a p {
+    padding-right: 22px;
+  }
+}

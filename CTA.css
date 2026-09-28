@@ -1,0 +1,95 @@
+.cta__card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: clamp(480px, 50vw, 640px);
+  display: grid;
+  place-items: center;
+  padding: clamp(48px, 7vw, 110px) clamp(20px, 5vw, 80px);
+  border-radius: clamp(28px, 3.4vw, 44px);
+  color: #fff;
+  text-align: center;
+  background: radial-gradient(60% 60% at 50% 0%, rgba(142, 86, 206, 0.55), transparent 70%),
+    radial-gradient(50% 50% at 0% 100%, rgba(24, 167, 230, 0.25), transparent 70%),
+    radial-gradient(50% 50% at 100% 100%, rgba(227, 25, 111, 0.28), transparent 70%),
+    linear-gradient(160deg, var(--purple-600), var(--purple) 40%, var(--purple-deep));
+  box-shadow: 0 50px 100px -50px rgba(42, 18, 69, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+.cta__card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 20%, transparent 75%);
+}
+.cta__bricks {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.cta__brick-wrap {
+  position: absolute;
+}
+.cta__brick {
+  display: block;
+  transform: rotate(var(--r));
+  animation: cta-float 9s ease-in-out infinite;
+}
+@keyframes cta-float {
+  0%,
+  100% {
+    transform: rotate(var(--r)) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(calc(var(--r) + 6deg)) translate3d(0, -14px, 0);
+  }
+}
+.cta__content {
+  display: grid;
+  justify-items: center;
+  gap: 26px;
+  max-width: 900px;
+}
+.cta__title {
+  font-size: clamp(2.5rem, 1rem + 6.4vw, 7rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+.cta__shine {
+  background: linear-gradient(100deg, var(--yellow) 0%, #fff3cf 20%, var(--yellow) 40%, var(--yellow) 60%, #ff8fbd 100%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 5s linear infinite;
+}
+@keyframes shine {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -150% 0;
+  }
+}
+.cta__text {
+  max-width: 520px;
+  font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.35rem);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .cta__brick {
+    scale: 0.6;
+  }
+  .cta__title {
+    font-size: clamp(2.3rem, 11.5vw, 4rem);
+  }
+}
