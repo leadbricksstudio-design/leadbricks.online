@@ -6,7 +6,7 @@
 export const siteConfig = {
   name: 'LeadBricks',
   descriptor: 'Marketing Agency',
-  url: 'https://leadbricks.in',
+  url: 'https://leadbricks.online',
 
   tagline: ['Build your brand.', 'Brick by brick.'],
   positioning: "We don't just generate leads. We build growth systems.",

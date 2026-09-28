@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://leadbricks.in/sitemap.xml
+Sitemap: https://leadbricks.online/sitemap.xml

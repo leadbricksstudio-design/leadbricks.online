@@ -11,7 +11,7 @@ npm run build    # production build → dist/
 npm run preview  # preview the production build
 ```
 
-Deploy `dist/` to Netlify or Vercel (`netlify.toml` and `vercel.json` are included).
+Deployed on Netlify. Build settings live in `netlify.toml` (build command `npm run build`, publish directory `dist`).
 
 ## Where to edit content
 
@@ -27,7 +27,7 @@ Deploy `dist/` to Netlify or Vercel (`netlify.toml` and `vercel.json` are includ
 ## Before going live
 
 1. Set the real WhatsApp number, phone and email in `siteConfig.js`.
-2. Replace `https://leadbricks.in` if the domain is different. It appears in `index.html` (canonical, OG, schema), `public/robots.txt` and `public/sitemap.xml`.
+2. The site domain is `https://leadbricks.online`. It appears in `index.html` (canonical, OG, schema), `public/robots.txt` and `public/sitemap.xml`.
 3. Add real social links.
 4. Review `public/privacy.html` and `public/terms.html`.
 
@@ -38,3 +38,21 @@ The form defaults to `provider: 'whatsapp'`: it opens WhatsApp with the enquiry 
 - `web3forms`: add your `web3formsKey`
 - `formsubmit`: set `formsubmitEmail` and confirm the first email FormSubmit sends
 - `googleForms`: set the form `action` URL and the `entry.X` ID for each field
+
+## Project structure
+
+```
+├── index.html            # HTML entry (SEO meta, schema)
+├── netlify.toml          # Netlify build, SPA redirect, cache headers
+├── vite.config.js
+├── public/               # Static files copied as-is (favicon, images, robots, sitemap, legal pages)
+└── src/
+    ├── main.jsx          # React entry
+    ├── App.jsx
+    ├── components/       # Page sections (+ ui/ primitives)
+    ├── config/           # siteConfig.js
+    ├── data/             # Editable content
+    ├── hooks/
+    ├── styles/
+    └── utils/
+```
